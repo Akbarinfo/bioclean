@@ -1,0 +1,68 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 7px rgb(111 111 111 / 30%);
+  font-weight: 600;
+  padding: 11px 0;
+  z-index: 100;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+
+    &:hover .header__link {
+      color: #7ab226;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #555;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #555;
+    transition: all 0.4s ease;
+    padding: 8px 15px;
+
+    &:hover {
+      color: #7ab226;
+    }
+
+    svg {
+      font-size: 17.5px;
+      color: #7ab226;
+      margin-right: 10px;
+    }
+  }
+
+  &__logobox {
+    width: 175px;
+    height: 36px;
+    overflow: hidden;
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  
+}

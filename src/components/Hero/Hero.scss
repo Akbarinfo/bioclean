@@ -1,0 +1,86 @@
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url('../../assets/images/deratization-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  ::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #f5f5f5;
+  }
+
+  &__bigbox {
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "JOST";
+    font-weight: 800;
+    font-size: 125px;
+    height: 135px;
+    text-transform: uppercase;
+    color: #fff;
+
+    span {
+      color: #7ab226;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 37px;
+    color: #fff;
+    padding-left: 10px;
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    max-width: 50%;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 10px;
+    margin-bottom: 80px;
+  }
+
+  &__link {
+    background-color: #7ab226;
+    box-shadow: 0 3px 7px rgb(111 111 111 / 30%);
+    border-radius: 3px;
+    font-weight: 600;
+    color: #fafafa;
+    padding: 20px 24px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: #5a8d0d;
+      color: #fafafa;
+    }
+  }
+
+  &__icon {
+    font-size: 20px;
+  }
+
+  &__imgbox {
+    position: relative;
+    align-self: flex-end;
+    z-index: 10;
+  }
+
+  &__img {
+    min-width: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
